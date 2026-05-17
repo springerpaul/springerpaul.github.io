@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt - [Company Name]">
+    <title>Kontakt - [Company Name]</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="../assets/logo.png" alt="[Company] Logo" class="logo-image">
+                    <span class="logo-text">[Company Name]</span>
+                </a>
+                <nav class="navigation" aria-label="Hauptnavigation">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="products.html">Produkte</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Wir freuen uns auf Ihre Nachricht</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Contact Information -->
+            <section class="contact-info">
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h3>Adresse</h3>
+                        <p>
+                            [Company Name]<br>
+                            [Street Address]<br>
+                            [Postal Code] [City]<br>
+                            [Country]
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Telefon</h3>
+                        <p>
+                            <strong>Telefon:</strong> <a href="tel:+XX">+XX [XXX] XXXXXXXXX</a><br>
+                            <strong>Fax:</strong> [Optional]
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <h3>E-Mail</h3>
+                        <p>
+                            <strong>Support:</strong> <a href="mailto:support@company.com">support@company.com</a><br>
+                            <strong>Info:</strong> <a href="mailto:info@company.com">info@company.com</a>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Contact Form (Aufgabe 6 - Datenschutz relevant) -->
+            <section class="contact-form-section">
+                <h2>Schreiben Sie uns eine Nachricht</h2>
+                <p>
+                    Füllen Sie das folgende Formular aus und wir werden uns schnellstmöglich bei Ihnen melden.
+                </p>
+                
+                <form id="contact-form" method="POST" action="#" class="contact-form">
+                    <fieldset>
+                        <legend>Kontaktformular</legend>
+                        
+                        <div class="form-group">
+                            <label for="name">Name <span aria-label="erforderlich">*</span></label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                minlength="2"
+                                aria-describedby="name-help"
+                            >
+                            <small id="name-help">Ihr vollständiger Name</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail <span aria-label="erforderlich">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                aria-describedby="email-help"
+                            >
+                            <small id="email-help">Wir werden Ihnen unter dieser Adresse antworten</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone"
+                                aria-describedby="phone-help"
+                            >
+                            <small id="phone-help">Optional</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Betreff <span aria-label="erforderlich">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Wählen Sie ein Thema --</option>
+                                <option value="support">Technischer Support</option>
+                                <option value="sales">Vertrieb</option>
+                                <option value="billing">Abrechnung</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Sonstiges</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nachricht <span aria-label="erforderlich">*</span></label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                required
+                                minlength="10"
+                                aria-describedby="message-help"
+                            ></textarea>
+                            <small id="message-help">Mindestens 10 Zeichen</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input 
+                                    type="checkbox" 
+                                    id="privacy-consent" 
+                                    name="privacy-consent" 
+                                    required
+                                >
+                                Ich habe die <a href="privacy.html">Datenschutzerklärung</a> gelesen und akzeptiert <span aria-label="erforderlich">*</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                        <small style="display: block; margin-top: var(--spacing-md);">
+                            Ihre Daten werden gemäß unserer <a href="privacy.html">Datenschutzerklärung</a> verarbeitet.
+                        </small>
+                    </fieldset>
+                </form>
+
+                <p style="margin-top: var(--spacing-lg); padding-top: var(--spacing-lg); border-top: 1px solid var(--color-border);">
+                    <strong>Hinweis:</strong> Dieses Kontaktformular ist gemockt. Die Daten werden nicht wirklich verarbeitet, 
+                    sondern nur zu Demonstrationszwecken angezeigt.
+                </p>
+            </section>
+
+            <!-- Business Hours -->
+            <section class="business-hours">
+                <h2>Geschäftszeiten</h2>
+                <table style="width: 100%; max-width: 400px;">
+                    <tbody>
+                        <tr>
+                            <td><strong>Montag - Freitag:</strong></td>
+                            <td>09:00 - 17:00 Uhr</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Samstag:</strong></td>
+                            <td>10:00 - 14:00 Uhr</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sonntag:</strong></td>
+                            <td>Geschlossen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>[Company Name]</h4>
+                    <p>Kurzbeschreibung</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="license.html">Lizenz</a></li>
+                        <li><a href="privacy.html">Datenschutz</a></li>
+                        <li><a href="imprint.html">Impressum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="copyright-notice.html">Urheberrechte</a></li>
+                        <li><a href="accessibility.html">Barrierefreiheit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 [Company Name]. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Mock form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Danke für Ihre Nachricht! Dies ist ein gemocktes Formular zu Demonstrationszwecken.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

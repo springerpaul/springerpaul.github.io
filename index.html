@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Your Product] - Your webshop description">
+    <title>WebShop - [Your Company Name]</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="[Company] Logo" class="logo-image">
+                    <span class="logo-text">[Company Name]</span>
+                </a>
+                
+                <nav class="navigation" aria-label="Hauptnavigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/about.html">Über uns</a></li>
+                        <li><a href="pages/products.html">Produkte</a></li>
+                        <li><a href="pages/contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Willkommen">
+        <div class="container">
+            <h1>[Your Product Name]</h1>
+            <p class="hero-subtitle">[One-line product description]</p>
+            <button class="btn btn-primary" onclick="scrollToProducts()">Jetzt entdecken</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Features Section -->
+        <section class="features" aria-label="Funktionen">
+            <div class="container">
+                <h2>Hauptmerkmale</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h3>Feature 1</h3>
+                        <p>Kurze Beschreibung der ersten Funktion</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Feature 2</h3>
+                        <p>Kurze Beschreibung der zweiten Funktion</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Feature 3</h3>
+                        <p>Kurze Beschreibung der dritten Funktion</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products-section" class="products" aria-label="Produkte">
+            <div class="container">
+                <h2>Unsere Produkte</h2>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="assets/product-1.png" alt="Produkt 1">
+                        <h3>Produkt 1</h3>
+                        <p>Produktbeschreibung</p>
+                        <p class="price">€ 29,99</p>
+                        <button class="btn btn-secondary">Mehr Info</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="assets/product-2.png" alt="Produkt 2">
+                        <h3>Produkt 2</h3>
+                        <p>Produktbeschreibung</p>
+                        <p class="price">€ 49,99</p>
+                        <button class="btn btn-secondary">Mehr Info</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="assets/product-3.png" alt="Produkt 3">
+                        <h3>Produkt 3</h3>
+                        <p>Produktbeschreibung</p>
+                        <p class="price">€ 79,99</p>
+                        <button class="btn btn-secondary">Mehr Info</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" aria-label="Handlungsaufforderung">
+            <div class="container">
+                <h2>Bereit anzufangen?</h2>
+                <p>Laden Sie noch heute [Your Product] herunter</p>
+                <button class="btn btn-primary btn-large">Download</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>[Company Name]</h4>
+                    <p>Kurzbeschreibung des Unternehmens</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="pages/about.html">Über uns</a></li>
+                        <li><a href="pages/license.html">Lizenz</a></li>
+                        <li><a href="pages/privacy.html">Datenschutz</a></li>
+                        <li><a href="pages/imprint.html">Impressum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="pages/copyright-notice.html">Urheberrechte</a></li>
+                        <li><a href="pages/accessibility.html">Barrierefreiheit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 [Company Name]. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
