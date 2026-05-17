@@ -33,33 +33,51 @@
         </div>
     </header>
 
+    <!-- Mockup Banner -->
+    <div class="mockup-banner">
+        ℹ️ Diese Website ist ein Mockup für Bildungszwecke
+    </div>
+
     <!-- Hero Section -->
     <section class="hero" aria-label="Willkommen">
-        <div class="container">
-            <h1>MetaBrainz BrainzAssistant Pro</h1>
-            <p class="hero-subtitle">Der BrainzAssistant für vielseitige Anwendungen im Alltag</p>
-            <button class="btn btn-primary" onclick="scrollToProducts()">Jetzt entdecken</button>
-        </div>
-    </section>
+    <!-- Das Hintergrundvideo -->
+    <video autoplay loop muted playsinline aria-hidden="true" class="hero-video" id="heroVideo">
+        <source src="assets/video-assistant.mp4" type="video/mp4">
+        Dein Browser unterstützt keine HTML5-Videos.
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+        <h1>MetaBrainz BrainzAssistant Pro</h1>
+        <p class="hero-subtitle">Der BrainzAssistant für vielseitige Anwendungen im Alltag</p>
+        
+        <button class="btn btn-primary" onclick="scrollToProducts()">Jetzt entdecken</button>
+        
+        <button class="btn btn-secondary" onclick="toggleVideo()" id="videoPauseBtn" aria-label="Hintergrundvideo pausieren">
+            ⏸ Pause
+        </button>
+    </div>
+</section>
 
     <!-- Main Content -->
     <main id="main-content">
         <!-- Features Section -->
         <section class="features" aria-label="Funktionen">
             <div class="container">
-                <h2>Hauptmerkmale</h2>
+                <h2>Features mit BrainzAssistant Pro</h2>
                 <div class="features-grid">
                     <article class="feature-card">
-                        <h3>Feature 1</h3>
-                        <p>Kurze Beschreibung der ersten Funktion</p>
+                        <h3>Unterstützung für verschiedene Sprachen</h3>
+                        <p>Egal welche Sprache Sie sprechen, unser BrainzAssistant Pro versteht Sie</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Feature 2</h3>
-                        <p>Kurze Beschreibung der zweiten Funktion</p>
+                        <h3>Intelligente KI-Unterstützung</h3>
+                        <p>Ihr persönlicher KI Assistent, jederzeit für Sie da</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Feature 3</h3>
-                        <p>Kurze Beschreibung der dritten Funktion</p>
+                        <h3>Nahtlose Integration</h3>
+                        <p>Nahtlose Integration in alle gängigen Systeme</p>
                     </article>
                 </div>
             </div>
@@ -71,10 +89,10 @@
                 <h2>Unser Produkt</h2>
                 <div class="products-grid">
                     <article class="product-card">
-                        <img src="assets/product-1.png" alt="Produkt 1">
-                        <h3>Produkt 1</h3>
+                        <img src="assets/assistant.jpg" alt="BrainzAssistant Pro">
+                        <h3>BrainzAssistant Pro</h3>
                         <p>Produktbeschreibung</p>
-                        <p class="price">€ 29,99</p>
+                        <p class="price">€ 29,99 / Monat</p>
                         <button class="btn btn-secondary">Mehr Info</button>
                     </article>
                 </div>
@@ -117,7 +135,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 MetaBrainz GmbH. Alle Rechte vorbehalten.</p>
+                <p id = "footer-bottom-text">&copy; 2026 MetaBrainz GmbH. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>

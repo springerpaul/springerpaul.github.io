@@ -6,6 +6,21 @@ function scrollToProducts() {
     }
 }
 
+function toggleVideo() {
+    var video = document.getElementById("heroVideo");
+    var btn = document.getElementById("videoPauseBtn");
+
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "⏸ Pause";
+        btn.setAttribute("aria-label", "Hintergrundvideo pausieren");
+    } else {
+        video.pause();
+        btn.innerHTML = "▶ Play";
+        btn.setAttribute("aria-label", "Hintergrundvideo abspielen");
+    }
+}
+
 // Initialize tooltips or other interactive elements
 document.addEventListener('DOMContentLoaded', function() {
     // Add any initialization code here
